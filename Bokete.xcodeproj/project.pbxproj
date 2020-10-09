@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		5A4BB2E02488647500BF513F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4BB2DE2488647500BF513F /* Main.storyboard */; };
 		5A4BB2E22488647800BF513F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A4BB2E12488647800BF513F /* Assets.xcassets */; };
 		5A4BB2E52488647800BF513F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4BB2E32488647800BF513F /* LaunchScreen.storyboard */; };
+		5A4BB30D248918B600BF513F /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4BB30C248918B600BF513F /* ShareViewController.swift */; };
+		CB9A2B6CF967603CC4F4EC31 /* Pods_Bokete.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B415EC578D41E777625E4289 /* Pods_Bokete.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57677A71C24D63B30AD6E22A /* Pods-Bokete.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bokete.debug.xcconfig"; path = "Target Support Files/Pods-Bokete/Pods-Bokete.debug.xcconfig"; sourceTree = "<group>"; };
 		5A4BB2D52488647500BF513F /* Bokete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bokete.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A4BB2D82488647500BF513F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A4BB2DA2488647500BF513F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		5A4BB2E12488647800BF513F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A4BB2E42488647800BF513F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A4BB2E62488647800BF513F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A4BB30C248918B600BF513F /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		87C1072EC7775576DB00A0A2 /* Pods-Bokete.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bokete.release.xcconfig"; path = "Target Support Files/Pods-Bokete/Pods-Bokete.release.xcconfig"; sourceTree = "<group>"; };
+		B415EC578D41E777625E4289 /* Pods_Bokete.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bokete.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9A2B6CF967603CC4F4EC31 /* Pods_Bokete.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				5A4BB2D72488647500BF513F /* Bokete */,
 				5A4BB2D62488647500BF513F /* Products */,
+				D8F35108F3DF842B101D2A7D /* Pods */,
+				F4572F724C7FF40E73159BAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,26 @@
 				5A4BB2E12488647800BF513F /* Assets.xcassets */,
 				5A4BB2E32488647800BF513F /* LaunchScreen.storyboard */,
 				5A4BB2E62488647800BF513F /* Info.plist */,
+				5A4BB30C248918B600BF513F /* ShareViewController.swift */,
 			);
 			path = Bokete;
+			sourceTree = "<group>";
+		};
+		D8F35108F3DF842B101D2A7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57677A71C24D63B30AD6E22A /* Pods-Bokete.debug.xcconfig */,
+				87C1072EC7775576DB00A0A2 /* Pods-Bokete.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4572F724C7FF40E73159BAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B415EC578D41E777625E4289 /* Pods_Bokete.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A4BB2E92488647800BF513F /* Build configuration list for PBXNativeTarget "Bokete" */;
 			buildPhases = (
+				AB456771FFA294A0DB3CCFF1 /* [CP] Check Pods Manifest.lock */,
 				5A4BB2D12488647500BF513F /* Sources */,
 				5A4BB2D22488647500BF513F /* Frameworks */,
 				5A4BB2D32488647500BF513F /* Resources */,
+				5A67DCC6E145E6E36B41D16A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A67DCC6E145E6E36B41D16A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bokete/Pods-Bokete-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bokete/Pods-Bokete-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bokete/Pods-Bokete-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB456771FFA294A0DB3CCFF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bokete-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5A4BB2D12488647500BF513F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 			files = (
 				5A4BB2DD2488647500BF513F /* ViewController.swift in Sources */,
 				5A4BB2D92488647500BF513F /* AppDelegate.swift in Sources */,
+				5A4BB30D248918B600BF513F /* ShareViewController.swift in Sources */,
 				5A4BB2DB2488647500BF513F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,9 +354,11 @@
 		};
 		5A4BB2EA2488647800BF513F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57677A71C24D63B30AD6E22A /* Pods-Bokete.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 777ZAR7F28;
 				INFOPLIST_FILE = Bokete/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,15 +367,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fukaya.Bokete;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5A4BB2EB2488647800BF513F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87C1072EC7775576DB00A0A2 /* Pods-Bokete.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 777ZAR7F28;
 				INFOPLIST_FILE = Bokete/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -310,7 +386,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fukaya.Bokete;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
